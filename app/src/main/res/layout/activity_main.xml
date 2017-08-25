@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android='http://schemas.android.com/apk/res/android'
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width='match_parent'
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+        <EditText android:id='@+id/edit_message'
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_message"/>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@string/button_send'
+            android:onClick='sendMessage'/>
+</LinearLayout>
+<!-- NOTAS
+    match_parent lo hace coincidir con la vista anterior
+    android:id-> identificador único para la vista, el @ se require cuando haces referencia
+                 a un objeto de XML "edit_message" sería el nombre del recurso, el más es cuando
+                 definis un ID de recurso por primera vez
+    android:hint -> placeholder, en este caso hace referencia a un string definido en un archivo
+                    a parte
+-->
+

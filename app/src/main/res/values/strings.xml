@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Primera App</string>
+    <string name='edit_message'>Enter a message</string>
+    <string name='button_send'>Send</string>
+</resources><!--
+ siempre es útil especificar cada string como recurso. Los recursos de string permiten
+ administrar todos los textos de IU en una ola ubicación, loo que hace que sea más fácil
+ encontrar y actualizar el texto. Externalizar las string también te permite localizar tu app
+ para diferentes idiomas al proporcionar definicones alternativas para cada recurso de string
+-->
