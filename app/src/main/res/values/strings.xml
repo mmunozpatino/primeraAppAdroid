@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name='hello_word'>Hello Word!</string>
     <string name="app_name">Primera App</string>
     <string name='edit_message'>Enter a message</string>
     <string name='button_send'>Send</string>

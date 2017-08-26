@@ -4,18 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width='match_parent'
     android:layout_height="match_parent"
-    android:orientation="horizontal">
-        <EditText android:id='@+id/edit_message'
-            android:layout_weight="1"
-            android:layout_width="0dp"
+    android:weightSum="1"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width='match_parent'
             android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src='@mipmap/country_flag'
+                    />
+
+                <TextView
+                    android:id="@+id/helloWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:visibility="visible"/>
+        </LinearLayout>
+
+
+        <EditText
+            android:id='@+id/edit_message'
+            android:layout_width="383dp"
+            android:layout_height="53dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:hint="@string/edit_message"/>
+
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text='@string/button_send'
-            android:onClick='sendMessage'/>
+            android:onClick='sendMessage'
+            android:padding="10dp"
+            android:text='@string/button_send'/>
+
 </LinearLayout>
 <!-- NOTAS
     match_parent lo hace coincidir con la vista anterior

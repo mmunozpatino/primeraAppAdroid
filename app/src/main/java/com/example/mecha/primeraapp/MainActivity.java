@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
@@ -12,6 +13,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        final TextView hello = (TextView) findViewById(R.id.helloWord);
+        hello.setText(R.string.hello_word);
+
     }
     //esto se llama cuando el usuario hace click en el boton SEND
     public void sendMessage(View view){
